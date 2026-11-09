@@ -66,7 +66,7 @@ const features = [
     name: "Documents",
     desc: "IDs, certificates and records",
     image: documentsIcon,
-    color: "#2882C6",
+    color: "#030404",
     rgb: "40, 130, 198"
   },
   {
@@ -187,7 +187,7 @@ const steps = [
 
 const questions = [
   [
-    "What is FamilyKit?",
+    "What is FamilyKit?!",
     "FamilyKit helps families organize important documents, reminders, assets and everyday information in one place."
   ],
   [

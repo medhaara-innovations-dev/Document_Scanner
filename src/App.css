@@ -1,0 +1,3529 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800;900&display=swap");
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+:root {
+   font-family: "Mulish", Arial, sans-serif;
+  color: #110d29;
+  background: #FDFCFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #FDFCFF;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(92%, 1160px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+
+
+
+
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.045em;
+}
+
+h2 {
+  font-size: clamp(23px, 2.4vw, 33px);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+p {
+  line-height: 1.55;
+}
+
+em {
+  font-style: normal;
+  color: #6c16b5;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+  height: 65px;
+  position: relative;
+  z-index: 20;
+  background: #FDFCFF;
+}
+
+.nav {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 24px;
+  font-weight: 900;
+
+  letter-spacing: -0.07em;
+
+  white-space: nowrap;
+}
+
+.brand-icon {
+  width: 31px;
+  height: 31px;
+
+  background: #6511a9;
+  color: #ffffff;
+
+  border-radius: 6px;
+
+  display: grid;
+  place-items: center;
+
+  position: relative;
+}
+
+.brand-people {
+  position: absolute;
+
+  bottom: 4px;
+  left: 9px;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.navlinks {
+  display: flex;
+  align-items: center;
+
+  gap: 26px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.navlinks a {
+  transition: color 0.2s ease;
+}
+
+.navlinks a:hover {
+  color: #6014a3;
+}
+
+.navlinks a:first-child {
+  color: #6014a3;
+
+  background: #f0e5fa;
+
+  padding: 10px 16px;
+
+  border-radius: 11px;
+}
+
+
+/* =========================================================
+   HEADER ACTIONS
+========================================================= */
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.primary-btn,
+.outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+
+.primary-btn {
+  padding: 14px 24px;
+
+  border-radius: 16px;
+
+  border: 1px solid #4b087f;
+
+  background:
+    linear-gradient(
+      180deg,
+      #7b27bd 0%,
+      #6415a5 45%,
+      #500b8d 100%
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    inset 0 2px 2px rgba(255, 255, 255, 0.32),
+    inset 0 -3px 4px rgba(43, 0, 75, 0.32),
+    0 4px 7px rgba(76, 13, 154, 0.25);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+}
+
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+
+  filter: brightness(1.06);
+
+  box-shadow:
+    inset 0 2px 3px rgba(255, 255, 255, 0.38),
+    inset 0 -3px 4px rgba(43, 0, 75, 0.32),
+    0 7px 12px rgba(76, 13, 154, 0.30);
+}
+
+
+.primary-btn:active {
+  transform: translateY(1px);
+
+  box-shadow:
+    inset 0 4px 6px rgba(40, 0, 70, 0.32),
+    inset 0 -1px 2px rgba(255, 255, 255, 0.18),
+    0 2px 3px rgba(76, 13, 154, 0.20);
+}
+
+
+.outline-btn {
+  padding: 11px 20px;
+
+  border: 1px solid #6b269f;
+
+  border-radius: 14px;
+
+  color: #53138e;
+
+  background: #FDFCFF;
+
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    0 2px 5px rgba(90, 20, 150, 0.10);
+}
+
+
+.primary-btn.small {
+  padding: 11px 20px;
+  font-size: 12px;
+}
+
+
+.mobile-header-actions,
+.mobile-auth-buttons {
+  display: none;
+}
+
+
+.menu-toggle {
+  display: none;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #5a1398;
+
+  padding: 0;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  background:
+    radial-gradient(
+      ellipse at 80% 50%,
+      #efe0ff 0,
+      transparent 55%
+    ),
+    linear-gradient(
+      110deg,
+      #FDFCFF 25%,
+      #f8f0ff
+    );
+
+  overflow: hidden;
+}
+
+
+.hero-grid {
+  min-height: 335px;
+
+  display: grid;
+
+  grid-template-columns: 46% 54%;
+
+  align-items: center;
+}
+
+
+.hero-copy {
+  padding: 22px 0 24px 20px;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+
+.eyebrow,
+.section-kicker {
+  color: #5b159c;
+
+  font-size: 11px;
+
+  font-weight: 900;
+
+  letter-spacing: 0.02em;
+}
+
+
+.eyebrow {
+  display: inline-block;
+
+  padding: 7px 13px;
+
+  background: #eee1f9;
+
+  border-radius: 12px;
+
+  margin-bottom: 14px;
+}
+
+
+.hero h1 {
+  font-size: clamp(31px, 3.4vw, 46px);
+
+  line-height: 1.05;
+
+  margin-bottom: 13px;
+
+  font-weight: 900;
+}
+
+
+.hero-copy > p {
+  font-size: 14px;
+
+  max-width: 490px;
+}
+
+
+.hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+
+  margin: 18px 0 26px;
+}
+
+
+.video-link {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+.video-link svg {
+  color: #6217a5;
+}
+
+
+/* =========================================================
+   HERO TRUST ROW
+========================================================= */
+
+.trust-row {
+  display: flex;
+
+  gap: 18px;
+}
+
+
+.trust-row span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding-right: 16px;
+
+  border-right: 1px solid #e5dcea;
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.trust-row span:last-child {
+  border: 0;
+}
+
+
+.trust-row svg {
+  width: 20px;
+  height: 20px;
+
+  color: #6b1cb1;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.hero-art {
+  position: relative;
+
+  align-self: end;
+}
+
+
+.hero-art > img {
+  display: block;
+
+  width: 83%;
+
+  height: 310px;
+
+  object-fit: contain;
+
+  object-position: bottom;
+}
+
+
+.floating-list {
+  position: absolute;
+
+  right: 0;
+  top: 22px;
+
+  display: grid;
+
+  gap: 8px;
+}
+
+
+.floating-list > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  background: #FDFCFF;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 5px 14px rgba(106, 39, 144, 0.09);
+
+  padding: 10px 13px;
+
+  min-width: 145px;
+
+  font-size: 12px;
+}
+
+
+.floating-list svg {
+  color: #7a1ac1;
+}
+
+
+/* =========================================================
+   PROBLEM SECTION
+========================================================= */
+
+.problem {
+  background:
+    linear-gradient(
+      90deg,
+      #f0e6ff,
+      #f9f3ff
+    );
+
+  padding: 18px 0;
+}
+
+
+.problem-grid {
+  display: grid;
+
+  grid-template-columns: 48% 52%;
+
+  align-items: center;
+
+  gap: 16px;
+}
+
+
+.problem-grid img {
+  width: 85%;
+
+  height: 160px;
+
+  object-fit: contain;
+}
+
+
+.problem-grid h2 {
+  margin: 8px 0;
+}
+
+
+.problem-grid p {
+  max-width: 470px;
+
+  font-size: 13px;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   SOLUTION
+========================================================= */
+
+.solution {
+  display: grid;
+
+  grid-template-columns: 30% 70%;
+
+  gap: 20px;
+
+  align-items: center;
+
+  padding: 24px 0;
+}
+
+
+.solution-intro p {
+  font-size: 13px;
+
+  max-width: 300px;
+}
+
+
+.solution-intro h2 {
+  margin: 6px 0;
+}
+
+
+/* =========================================================
+   FOUR SOLUTION CARDS
+========================================================= */
+
+.benefits {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+
+.benefit {
+  padding: 18px 16px;
+
+  border-radius: 13px;
+
+  min-height: 145px;
+}
+
+
+.benefit svg {
+  width: 29px;
+  height: 29px;
+
+  color: #7621b8;
+
+  margin-bottom: 12px;
+}
+
+
+.benefit p {
+  font-size: 11px;
+
+  line-height: 1.4;
+
+  margin: 0;
+}
+
+
+/* #FDFF94 AT 20% OPACITY */
+
+.lavender,
+.lime,
+.blue,
+.yellow {
+  background: rgba(253, 255, 148, 0.20);
+}
+
+
+/* =========================================================
+   NEW FAMILY FEATURE WHEEL
+========================================================= */
+
+.family-wheel-section {
+  padding: 35px 0 45px;
+
+  background: #FDFCFF;
+
+  overflow: hidden;
+}
+
+
+.family-wheel-title {
+  text-align: center;
+
+  font-size: 24px;
+
+  margin-bottom: 28px;
+}
+
+
+.family-wheel-title em {
+  color: #6c16b5;
+}
+
+
+/* =========================================================
+   MAIN WHEEL
+========================================================= */
+
+.family-wheel {
+  position: relative;
+
+  width: 720px;
+
+  height: 650px;
+
+  max-width: 100%;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   CENTER FAMILY
+========================================================= */
+
+.wheel-center {
+  position: absolute;
+
+  width: 290px;
+  height: 290px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  z-index: 3;
+}
+
+
+.wheel-family-glow {
+  position: absolute;
+
+  width: 265px;
+  height: 265px;
+
+  border-radius: 50%;
+
+  background: rgba(253, 255, 148, 0.55);
+
+  z-index: -1;
+}
+
+
+.wheel-center img {
+  width: 265px;
+  height: 265px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 50%;
+
+  display: block;
+}
+
+
+/* =========================================================
+   CONNECTOR LINES
+========================================================= */
+
+.wheel-lines {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  left: 0;
+  top: 0;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+
+.wheel-line {
+  position: absolute;
+
+  width: 125px;
+
+  height: 2px;
+
+  left: 50%;
+  top: 50%;
+
+  background: #e6ddf5;
+
+  transform-origin: left center;
+}
+
+
+/* TOP */
+
+.line-top {
+  transform:
+    translate(0px, -135px)
+    rotate(270deg);
+}
+
+
+/* TOP RIGHT */
+
+.line-top-right {
+  transform:
+    translate(105px, -95px)
+    rotate(315deg);
+}
+
+
+/* RIGHT */
+
+.line-right {
+  transform:
+    translate(125px, -1px)
+    rotate(0deg);
+}
+
+
+/* BOTTOM RIGHT */
+
+.line-bottom-right {
+  transform:
+    translate(105px, 95px)
+    rotate(45deg);
+}
+
+
+/* BOTTOM */
+
+.line-bottom {
+  transform:
+    translate(0px, 135px)
+    rotate(90deg);
+}
+
+
+/* BOTTOM LEFT */
+
+.line-bottom-left {
+  transform:
+    translate(-105px, 95px)
+    rotate(135deg);
+}
+
+
+/* LEFT */
+
+.line-left {
+  transform:
+    translate(-125px, -1px)
+    rotate(180deg);
+}
+
+
+/* TOP LEFT */
+
+.line-top-left {
+  transform:
+    translate(-105px, -95px)
+    rotate(225deg);
+}
+
+
+/* =========================================================
+   FEATURE CIRCLES
+========================================================= */
+
+.feature-circle {
+  position: absolute;
+
+  width: 138px;
+  height: 138px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 15px;
+
+  background: #FDFCFF;
+
+  border: 1.5px solid var(--feature-color);
+
+  z-index: 4;
+
+  cursor: default;
+
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease,
+    background-color 0.28s ease;
+}
+
+
+.feature-circle-icon {
+  width: 31px;
+
+  height: 31px;
+
+  color: var(--feature-color);
+
+  margin-bottom: 7px;
+
+  transition: transform 0.28s ease;
+}
+
+
+.feature-circle h3 {
+  margin: 0 0 5px;
+
+  font-size: 17px;
+
+  line-height: 1.05;
+
+  font-weight: 500;
+
+  letter-spacing: -0.02em;
+
+  color: #171324;
+}
+
+
+.feature-circle p {
+  margin: 0;
+
+  max-width: 110px;
+
+  font-size: 10px;
+
+  line-height: 1.3;
+
+  color: #393442;
+}
+
+
+/* =========================================================
+   FEATURE HOVER EFFECT
+========================================================= */
+
+@media (hover: hover) {
+
+  .feature-circle:hover {
+
+    transform: scale(1.055);
+
+    box-shadow:
+      0 0 0 9px rgba(var(--feature-rgb), 0.08),
+      0 8px 20px rgba(var(--feature-rgb), 0.22),
+      0 18px 35px rgba(var(--feature-rgb), 0.14);
+  }
+
+
+  .feature-circle:hover .feature-circle-icon {
+    transform: scale(1.08);
+  }
+
+}
+
+
+/* =========================================================
+   FEATURE CIRCLE POSITIONS
+========================================================= */
+
+
+/* DOCUMENTS */
+
+.feature-circle-1 {
+  background: #F0F6FB;
+  left: 50%;
+
+  top: 0;
+
+  transform: translateX(-50%);
+}
+
+
+/* INSURANCE */
+
+.feature-circle-2 {
+  background: #EFF9FA;
+  right: 50px;
+
+  top: 80px;
+}
+
+
+/* FINANCE */
+
+.feature-circle-3 {
+  background: #EFF0FB;
+  right: 0;
+
+  top: 255px;
+}
+
+
+/* PROPERTY */
+
+.feature-circle-4 {
+  background: #F7EFFB;
+  right: 55px;
+
+  bottom: 70px;
+}
+
+
+/* HEALTH */
+
+.feature-circle-5 {
+  background: #FAEFF6;
+  left: 50%;
+
+  bottom: 0;
+
+  transform: translateX(-50%);
+}
+
+
+/* HOUSEHOLD */
+
+.feature-circle-6 {
+  background: #FAF7F0;
+  left: 55px;
+
+  bottom: 70px;
+}
+
+
+/* EDUCATION */
+
+.feature-circle-7 {
+  background: #F1F9F0;
+  left: 0;
+
+  top: 255px;
+}
+
+
+/* TO DO LISTS */
+
+.feature-circle-8 {
+  background: #F1ECFB;
+  left: 50px;
+
+  top: 80px;
+}
+
+
+/* Preserve centering while hovering */
+
+@media (hover: hover) {
+
+  .feature-circle-1:hover,
+  .feature-circle-5:hover {
+    transform:
+      translateX(-50%)
+      scale(1.055);
+  }
+
+}
+
+
+/* =========================================================
+   HOW IT WORKS
+========================================================= */
+
+.how {
+  background: #faf6ff;
+
+  padding: 22px 0;
+}
+
+
+.how-inner {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+.how-intro {
+  flex: 0 0 29%;
+}
+
+
+.how-intro p {
+  font-size: 12px;
+
+  margin: 0;
+}
+
+
+.steps {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex: 1;
+}
+
+
+.step {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  flex: 1;
+}
+
+
+.step-icon {
+  background: #f0e7fa;
+
+  color: #7023b0;
+
+  padding: 9px;
+
+  border-radius: 50%;
+}
+
+
+.step-icon svg {
+  width: 22px;
+}
+
+
+.step-number {
+  background: #6810a8;
+
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  padding: 4px 7px;
+}
+
+
+.step h3 {
+  font-size: 11px;
+
+  margin: 8px 0 4px;
+}
+
+
+.step p {
+  font-size: 10px;
+
+  line-height: 1.35;
+
+  margin: 0;
+}
+
+
+.step-arrow {
+  width: 16px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+.dashboard {
+  background:
+    linear-gradient(
+      105deg,
+      #f1e6fc,
+      #f9f4ff
+    );
+
+  padding: 22px 0;
+}
+
+
+.dashboard-grid {
+  display: grid;
+
+  grid-template-columns: 57% 43%;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+
+.dashboard-image img {
+  display: block;
+
+  width: 100%;
+
+  max-height: 270px;
+
+  object-fit: contain;
+}
+
+
+.dashboard-copy h2 {
+  margin: 8px 0;
+}
+
+
+.dashboard-copy > p {
+  font-size: 13px;
+
+  max-width: 410px;
+}
+
+
+/* =========================================================
+   CHECK LIST
+   OUTLINED GREEN CIRCLE + GREEN TICK
+========================================================= */
+
+.check-list {
+  padding: 0;
+
+  list-style: none;
+
+  margin: 12px 0 0;
+}
+
+
+.check-list li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  font-size: 12px;
+
+  margin: 7px 0;
+}
+
+
+.check-list svg {
+  width: 19px;
+
+  height: 19px;
+
+  flex-shrink: 0;
+
+  color: #25c83a;
+
+  stroke: #25c83a;
+
+  fill: none;
+
+  stroke-width: 3;
+}
+
+
+/* =========================================================
+   SMART REMINDERS / UTILITIES
+========================================================= */
+
+.extras {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+
+  padding: 20px 0;
+}
+
+
+.extra {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+.extra-text {
+  display: flex;
+
+  gap: 12px;
+}
+
+
+.extra h2 {
+  font-size: 21px;
+
+  margin: 0 0 5px;
+}
+
+
+.extra p {
+  font-size: 12px;
+
+  margin: 0;
+}
+
+
+.extra img {
+  width: 33%;
+
+  height: 145px;
+
+  object-fit: contain;
+}
+
+
+.extra-icon {
+  display: grid;
+
+  place-items: center;
+
+  width: 43px;
+  height: 43px;
+
+  border-radius: 10px;
+
+  flex-shrink: 0;
+}
+
+
+.gold {
+  background: #fff6d6;
+
+  color: #d6a300;
+}
+
+
+.green {
+  background: #e9fad6;
+
+  color: #5ba62a;
+}
+
+
+/* =========================================================
+   SECURITY
+========================================================= */
+
+.security {
+  background:
+    linear-gradient(
+      90deg,
+      #effce8,
+      #f7ffef
+    );
+
+  padding: 18px 0;
+}
+
+
+.security-inner {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+
+.security-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  flex: 0 0 32%;
+}
+
+
+.security-title > svg {
+  color: #278b45;
+
+  flex-shrink: 0;
+}
+
+
+.security-title h2 {
+  font-size: 21px;
+
+  margin: 0;
+}
+
+
+.security-items {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+
+.security-items article > svg {
+  color: #3e9b53;
+
+  width: 24px;
+}
+
+
+.security-items h3 {
+  font-size: 12px;
+
+  margin: 6px 0;
+}
+
+
+.security-items p {
+  font-size: 10px;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.faq {
+  display: grid;
+
+  grid-template-columns: 35% 65%;
+
+  padding: 22px 0;
+
+  gap: 15px;
+}
+
+
+.faq h2 {
+  font-size: 24px;
+}
+
+
+.faq > div > p {
+  font-size: 12px;
+}
+
+
+.faq-items {
+  display: grid;
+
+  gap: 6px;
+}
+
+
+.faq-item {
+  border: 1px solid #d9d2e0;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+
+.faq-item button {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: transparent;
+
+  border: 0;
+
+  padding: 7px 15px;
+
+  text-align: left;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+
+.faq-item svg {
+  width: 16px;
+
+  color: #5b159c;
+
+  transition: transform 0.2s ease;
+}
+
+
+.faq-item svg.rotated {
+  transform: rotate(180deg);
+}
+
+
+.faq-item > p {
+  padding: 0 15px 12px;
+
+  margin: 0;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+  background:
+    linear-gradient(
+      100deg,
+      #6714aa,
+      #41058c
+    );
+
+  border-radius: 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 20px 38px;
+
+  color: #ffffff;
+}
+
+
+.cta-house {
+  position: relative;
+
+  display: grid;
+
+  place-items: center;
+
+  min-width: 170px;
+
+  border-right:
+    1px solid rgba(255, 255, 255, 0.40);
+}
+
+
+.cta-house > svg:nth-child(2) {
+  position: absolute;
+
+  color: #ffdbb4;
+}
+
+
+.cta h2 {
+  font-size: 22px;
+
+  margin: 0 0 6px;
+}
+
+
+.cta h2 span {
+  color: #e8ff73;
+}
+
+
+.cta p {
+  font-size: 11px;
+
+  margin: 0;
+}
+
+
+.cta-btn {
+  margin-left: auto;
+
+  border: 0;
+
+  background: #eaff78;
+
+  color: #211037;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  white-space: nowrap;
+
+  padding: 13px 22px;
+
+  border-radius: 16px;
+
+  font-size: 12px;
+
+  font-weight: 900;
+
+  box-shadow:
+    inset 0 2px 2px rgba(255, 255, 255, 0.70),
+    inset 0 -3px 4px rgba(88, 100, 0, 0.18),
+    0 4px 8px rgba(25, 0, 60, 0.20);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 15px 0;
+}
+
+
+.footer .brand {
+  font-size: 17px;
+}
+
+
+.footer .brand-icon {
+  width: 23px;
+
+  height: 23px;
+}
+
+
+.footer .brand-icon > svg:first-child {
+  width: 18px;
+}
+
+
+.footer .brand-people {
+  display: none;
+}
+
+
+.footer-brand {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+.footer-brand > span {
+  border-left: 1px solid #cccccc;
+
+  padding-left: 20px;
+
+  font-size: 10px;
+}
+
+
+.footer-links,
+.social {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+.footer-links a {
+  font-size: 10px;
+}
+
+
+.social svg {
+  width: 17px;
+
+  color: #59149b;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .navlinks {
+    gap: 12px;
+  }
+
+
+  .nav-actions {
+    display: none;
+  }
+
+
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .hero-art > img {
+    width: 100%;
+  }
+
+
+  .floating-list {
+    display: none;
+  }
+
+
+  .solution {
+    grid-template-columns: 1fr;
+  }
+
+
+  .how-inner {
+    display: block;
+  }
+
+
+  .steps {
+    margin-top: 18px;
+  }
+
+
+  .security-inner {
+    display: block;
+  }
+
+
+  .security-items {
+    margin-top: 15px;
+  }
+
+
+  .cta-house {
+    min-width: 100px;
+  }
+
+
+  /* =======================================================
+     TABLET FAMILY WHEEL
+  ======================================================= */
+
+  .family-wheel {
+    width: 650px;
+
+    height: 610px;
+  }
+
+
+  .feature-circle {
+    width: 128px;
+
+    height: 128px;
+  }
+
+
+  .wheel-center {
+    width: 270px;
+
+    height: 270px;
+  }
+
+
+  .wheel-family-glow {
+    width: 245px;
+
+    height: 245px;
+  }
+
+
+  .wheel-center img {
+    width: 270px;
+
+    height: 245px;
+  }
+
+
+  .feature-circle-2 {
+    right: 35px;
+  }
+
+
+  .feature-circle-3 {
+    right: 0;
+  }
+
+
+  .feature-circle-4 {
+    right: 40px;
+  }
+
+
+  .feature-circle-6 {
+    left: 40px;
+  }
+
+
+  .feature-circle-7 {
+    left: 0;
+  }
+
+
+  .feature-circle-8 {
+    left: 35px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .container {
+    width: 92%;
+  }
+
+
+  /* =======================================================
+     MOBILE HEADER
+  ======================================================= */
+
+  .header {
+    height: 65px;
+  }
+
+
+  .nav {
+    gap: 10px;
+  }
+
+
+  .brand {
+    font-size: 24px;
+  }
+
+
+  .nav-actions {
+    display: none;
+  }
+
+
+  .mobile-header-actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-left: auto;
+  }
+
+
+  .mobile-header-login {
+    height: 40px;
+
+    min-width: 78px;
+
+    padding: 0 18px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #6513a5;
+
+    background:
+      linear-gradient(
+        180deg,
+        #FDFCFF 0%,
+        #fbf7ff 100%
+      );
+
+    border: 2px solid #6d16ad;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    box-shadow:
+      inset 0 2px 3px rgba(255, 255, 255, 0.90),
+      inset 0 -2px 3px rgba(89, 15, 145, 0.08),
+      0 3px 6px rgba(89, 15, 145, 0.14);
+
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+  }
+
+
+  .mobile-header-login:active {
+    transform: translateY(1px);
+  }
+
+
+  .menu-toggle {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 38px;
+
+    height: 40px;
+
+    padding: 4px;
+
+    color: #5a1398;
+  }
+
+
+  .menu-toggle svg {
+    width: 29px;
+
+    height: 29px;
+  }
+
+
+  .navlinks {
+    display: none;
+
+    position: absolute;
+
+    top: 65px;
+
+    left: 0;
+
+    right: 0;
+
+    background: #FDFCFF;
+
+    padding: 18px 5%;
+
+    box-shadow:
+      0 8px 20px rgba(49, 16, 74, 0.13);
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  .navlinks.open {
+    display: flex;
+  }
+
+
+  .navlinks a {
+    padding: 8px !important;
+  }
+
+
+  /* =======================================================
+     MOBILE HERO
+  ======================================================= */
+
+  .hero-grid {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 0;
+  }
+
+
+  .hero-copy {
+    padding: 20px 6px 0;
+
+    text-align: left;
+
+    width: 100%;
+  }
+
+
+  .eyebrow {
+    display: block;
+
+    width: max-content;
+
+    max-width: 100%;
+
+    margin: 0 auto 15px;
+  }
+
+
+  .hero h1 {
+    font-size: clamp(29px, 7vw, 39px);
+
+    line-height: 1.07;
+  }
+
+
+  .desktop-break {
+    display: none;
+  }
+
+
+  .hero-copy > p {
+    font-size: 15px;
+  }
+
+
+  .hero-actions {
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+
+    gap: 15px;
+
+    margin: 17px 0;
+  }
+
+
+  .hero-early-access {
+    display: none;
+  }
+
+
+  /* =======================================================
+     MOBILE GET STARTED BUTTON
+  ======================================================= */
+
+  .mobile-auth-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    width: 85%;
+  }
+
+
+  .mobile-signup-btn {
+    width: 100%;
+
+    height: 54px;
+
+    min-height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    /*
+      The JSX arrow already has margin-left: 14px.
+      We keep gap at 0 so the spacing is controlled
+      by that arrow exactly.
+    */
+
+    gap: 0;
+
+    padding: 0 24px;
+
+    border-radius: 27px;
+
+    color: #ffffff;
+
+    border: 1px solid #4b087f;
+
+    background:
+      linear-gradient(
+        180deg,
+        #8527c9 0%,
+        #6813ad 48%,
+        #52098f 100%
+      );
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-shadow:
+      inset 0 2px 3px rgba(255, 255, 255, 0.30),
+      inset 0 -3px 4px rgba(43, 0, 75, 0.32),
+      0 4px 8px rgba(76, 13, 154, 0.25);
+
+    transition:
+      transform 0.15s ease,
+      box-shadow 0.15s ease,
+      filter 0.15s ease;
+  }
+
+
+  .mobile-signup-btn:hover {
+    transform: translateY(-1px);
+
+    filter: brightness(1.05);
+
+    box-shadow:
+      inset 0 2px 3px rgba(255, 255, 255, 0.36),
+      inset 0 -3px 4px rgba(43, 0, 75, 0.32),
+      0 6px 11px rgba(76, 13, 154, 0.30);
+  }
+
+
+  .mobile-signup-btn:active {
+    transform: translateY(1px);
+
+    box-shadow:
+      inset 0 4px 6px rgba(40, 0, 70, 0.20),
+      0 2px 3px rgba(76, 13, 154, 0.16);
+  }
+
+
+  .video-link {
+    font-size: 13px;
+  }
+
+
+  .trust-row {
+    justify-content: space-between;
+
+    gap: 4px;
+
+    margin: 22px 0 0;
+  }
+
+
+  .trust-row span {
+    flex-direction: column;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    flex: 1;
+
+    padding: 0 6px;
+  }
+
+
+  .trust-row svg {
+    width: 27px;
+
+    height: 27px;
+  }
+
+
+  .hero-art {
+    width: 100%;
+
+    align-self: center;
+  }
+
+
+  .hero-art > img {
+    width: 100%;
+
+    height: auto;
+
+    max-height: 320px;
+
+    object-fit: contain;
+  }
+
+
+  /* =======================================================
+     MOBILE PROBLEM
+  ======================================================= */
+
+  .problem {
+    padding: 15px 0;
+  }
+
+
+  .problem-grid {
+    display: flex;
+
+    flex-direction: column-reverse;
+
+    gap: 10px;
+  }
+
+
+  .problem-grid > div {
+    width: 100%;
+  }
+
+
+  .problem-grid img {
+    width: 100%;
+
+    height: auto;
+
+    max-height: 175px;
+  }
+
+
+  .problem-grid h2 {
+    font-size: 25px;
+  }
+
+
+  .problem-grid p {
+    font-size: 13px;
+  }
+
+
+  /* =======================================================
+     MOBILE SOLUTION
+  ======================================================= */
+
+  .solution {
+    display: block;
+
+    padding: 20px 0;
+  }
+
+
+  .solution-intro h2 {
+    font-size: 27px;
+  }
+
+
+  .solution-intro p {
+    max-width: none;
+  }
+
+
+  .benefits {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 8px;
+  }
+
+
+  .benefit {
+    min-height: 115px;
+
+    padding: 13px;
+  }
+
+
+  .benefit svg {
+    margin-bottom: 6px;
+  }
+
+
+  .benefit p {
+    font-size: 11px;
+  }
+
+
+  /* =======================================================
+     MOBILE FAMILY FEATURE WHEEL
+  ======================================================= */
+
+  .family-wheel-section {
+    padding: 25px 0 35px;
+  }
+
+
+  .family-wheel-title {
+    text-align: center;
+
+    font-size: 22px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+  }
+
+
+  .family-wheel {
+    width: 100%;
+
+    height: 510px;
+
+    max-width: 390px;
+
+    margin: 0 auto;
+  }
+
+
+  /* CENTER FAMILY */
+
+  .wheel-center {
+    width: 190px;
+
+    height: 190px;
+  }
+
+
+  .wheel-family-glow {
+    width: 155px;
+    height: 155px;
+
+    background: rgba(253, 255, 148, 0.55);
+  }
+
+
+  .wheel-center img {
+    width: 155px;
+    height: 155px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+  }
+
+
+  /* FEATURE CIRCLES */
+
+  .feature-circle {
+    width: 104px;
+
+    height: 104px;
+
+    padding: 9px;
+  }
+
+
+  .feature-circle-icon {
+    width: 25px;
+
+    height: 25px;
+
+    margin-bottom: 4px;
+  }
+
+
+  .feature-circle h3 {
+    font-size: 13px;
+
+    margin-bottom: 3px;
+  }
+
+
+  .feature-circle p {
+    max-width: 86px;
+
+    font-size: 8px;
+
+    line-height: 1.2;
+  }
+
+
+  /* DOCUMENTS */
+
+  .feature-circle-1 {
+    left: 50%;
+
+    top: 0;
+
+    transform: translateX(-50%);
+  }
+
+
+  /* INSURANCE */
+
+  .feature-circle-2 {
+    right: 7px;
+
+    top: 60px;
+  }
+
+
+  /* FINANCE */
+
+  .feature-circle-3 {
+    right: 0;
+
+    top: 205px;
+  }
+
+
+  /* PROPERTY */
+
+  .feature-circle-4 {
+    right: 15px;
+
+    bottom: 55px;
+  }
+
+
+  /* HEALTH */
+
+  .feature-circle-5 {
+    left: 50%;
+
+    bottom: 0;
+
+    transform: translateX(-50%);
+  }
+
+
+  /* HOUSEHOLD */
+
+  .feature-circle-6 {
+    left: 15px;
+
+    bottom: 55px;
+  }
+
+
+  /* EDUCATION */
+
+  .feature-circle-7 {
+    left: 0;
+
+    top: 205px;
+  }
+
+
+  /* TO DO LISTS */
+
+  .feature-circle-8 {
+    left: 7px;
+
+    top: 60px;
+  }
+
+
+  /* =======================================================
+     MOBILE CONNECTOR LINES
+  ======================================================= */
+
+  .wheel-line {
+    width: 80px;
+
+    height: 2px;
+  }
+
+
+  .line-right {
+    transform:
+      translate(80px, -1px)
+      rotate(0deg);
+  }
+
+
+  .line-bottom-right {
+    transform:
+      translate(65px, 65px)
+      rotate(45deg);
+  }
+
+
+  .line-bottom {
+    transform:
+      translate(0, 90px)
+      rotate(90deg);
+  }
+
+
+  .line-bottom-left {
+    transform:
+      translate(-65px, 65px)
+      rotate(135deg);
+  }
+
+
+  .line-left {
+    transform:
+      translate(-80px, -1px)
+      rotate(180deg);
+  }
+
+
+  .line-top-left {
+    transform:
+      translate(-65px, -65px)
+      rotate(225deg);
+  }
+
+
+  .line-top {
+    transform:
+      translate(0, -90px)
+      rotate(270deg);
+  }
+
+
+  .line-top-right {
+    transform:
+      translate(65px, -65px)
+      rotate(315deg);
+  }
+
+
+  /* =======================================================
+     MOBILE HOW IT WORKS
+  ======================================================= */
+
+  .how {
+    padding: 18px 0;
+  }
+
+
+  .how-intro h2 {
+    font-size: 24px;
+  }
+
+
+  .steps {
+    gap: 3px;
+
+    align-items: flex-start;
+  }
+
+
+  .step {
+    display: block;
+
+    text-align: center;
+
+    min-width: 0;
+  }
+
+
+  .step-icon {
+    display: inline-flex;
+
+    padding: 6px;
+  }
+
+
+  .step-icon svg {
+    width: 19px;
+
+    height: 19px;
+  }
+
+
+  .step h3 {
+    font-size: 9px;
+
+    margin: 6px 0;
+  }
+
+
+  .step p {
+    display: none;
+  }
+
+
+  .step-arrow {
+    width: 12px;
+
+    margin-top: 18px;
+  }
+
+
+  /* =======================================================
+     MOBILE DASHBOARD
+  ======================================================= */
+
+  .dashboard-grid {
+    display: flex;
+
+    flex-direction: column-reverse;
+
+    gap: 12px;
+  }
+
+
+  .dashboard-copy {
+    width: 100%;
+  }
+
+
+  .dashboard-copy h2 {
+    font-size: 28px;
+  }
+
+
+  .dashboard-copy > p {
+    font-size: 13px;
+  }
+
+
+  .dashboard-image img {
+    max-height: none;
+  }
+
+
+  /* =======================================================
+     MOBILE EXTRAS
+  ======================================================= */
+
+  .extras {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 8px;
+  }
+
+
+  .extra {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    background: #FDFCFF;
+
+    border: 1px solid #efe8f7;
+
+    border-radius: 15px;
+
+    padding: 12px 10px;
+  }
+
+
+  .extra-text {
+    display: block;
+  }
+
+
+  .extra-icon {
+    margin-bottom: 7px;
+  }
+
+
+  .extra h2 {
+    font-size: 18px;
+  }
+
+
+  .extra p,
+  .extra .check-list li {
+    font-size: 10px;
+  }
+
+
+  .extra img {
+    width: 100%;
+
+    height: 95px;
+
+    margin-top: auto;
+  }
+
+
+  /* =======================================================
+     MOBILE SECURITY
+  ======================================================= */
+
+  .security {
+    border-radius: 12px;
+  }
+
+
+  .security-title {
+    justify-content: center;
+  }
+
+
+  .security-title h2 {
+    font-size: 18px;
+  }
+
+
+  .security-items {
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 6px;
+  }
+
+
+  .security-items article {
+    text-align: center;
+  }
+
+
+  .security-items h3 {
+    font-size: 10px;
+  }
+
+
+  .security-items p {
+    font-size: 9px;
+  }
+
+
+  /* =======================================================
+     MOBILE FAQ
+  ======================================================= */
+
+  .faq {
+    display: block;
+  }
+
+
+  .faq h2 {
+    font-size: 23px;
+  }
+
+
+  .faq-items {
+    margin-top: 15px;
+  }
+
+
+  /* =======================================================
+     MOBILE CTA
+  ======================================================= */
+
+  .cta {
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 20px;
+
+    gap: 12px;
+  }
+
+
+  .cta-house {
+    border: 0;
+
+    min-width: 0;
+  }
+
+
+  .cta h2 {
+    font-size: 22px;
+  }
+
+
+  .cta-btn {
+    margin: 0;
+
+    width: 100%;
+  }
+
+
+  /* =======================================================
+     MOBILE FOOTER
+  ======================================================= */
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+
+  .footer-brand {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+
+  .footer-links {
+    gap: 14px;
+  }
+
+
+  .social {
+    margin-left: auto;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .brand {
+    font-size: 21px;
+  }
+
+
+  .brand-icon {
+    width: 29px;
+
+    height: 29px;
+  }
+
+
+  .mobile-header-actions {
+    gap: 7px;
+  }
+
+
+  .mobile-header-login {
+    min-width: 68px;
+
+    height: 38px;
+
+    padding: 0 13px;
+
+    border-radius: 19px;
+
+    font-size: 12px;
+  }
+
+
+  .menu-toggle {
+    width: 34px;
+
+    height: 38px;
+  }
+
+
+  .menu-toggle svg {
+    width: 27px;
+
+    height: 27px;
+  }
+
+
+  .security-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .hero h1 {
+    font-size: 29px;
+  }
+
+
+  .mobile-auth-buttons {
+    width: 100%;
+  }
+
+
+  .mobile-signup-btn {
+    height: 50px;
+
+    min-height: 50px;
+
+    border-radius: 25px;
+
+    font-size: 14px;
+  }
+
+
+  /* =======================================================
+     SMALL PHONE FAMILY WHEEL
+  ======================================================= */
+
+  .family-wheel {
+    height: 470px;
+
+    max-width: 350px;
+  }
+
+
+  .feature-circle {
+    width: 94px;
+
+    height: 94px;
+
+    padding: 7px;
+  }
+
+
+  .feature-circle-icon {
+    width: 22px;
+
+    height: 22px;
+
+    margin-bottom: 3px;
+  }
+
+
+  .feature-circle h3 {
+    font-size: 12px;
+  }
+
+
+  .feature-circle p {
+    max-width: 78px;
+
+    font-size: 7px;
+  }
+
+
+  .wheel-center {
+    width: 170px;
+
+    height: 170px;
+  }
+
+
+  .wheel-family-glow {
+    width: 140px;
+    height: 140px;
+  }
+
+
+  .wheel-center img {
+    width: 140px;
+    height: 140px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 50%;
+  }
+
+
+  .feature-circle-2 {
+    right: 3px;
+
+    top: 55px;
+  }
+
+
+  .feature-circle-3 {
+    right: 0;
+
+    top: 188px;
+  }
+
+
+  .feature-circle-4 {
+    right: 10px;
+
+    bottom: 50px;
+  }
+
+
+  .feature-circle-6 {
+    left: 10px;
+
+    bottom: 50px;
+  }
+
+
+  .feature-circle-7 {
+    left: 0;
+
+    top: 188px;
+  }
+
+
+  .feature-circle-8 {
+    left: 3px;
+
+    top: 55px;
+  }
+
+
+  .wheel-line {
+    width: 70px;
+  }
+
+
+  .line-right {
+    transform:
+      translate(70px, -1px)
+      rotate(0deg);
+  }
+
+
+  .line-bottom-right {
+    transform:
+      translate(55px, 55px)
+      rotate(45deg);
+  }
+
+
+  .line-bottom {
+    transform:
+      translate(0, 80px)
+      rotate(90deg);
+  }
+
+
+  .line-bottom-left {
+    transform:
+      translate(-55px, 55px)
+      rotate(135deg);
+  }
+
+
+  .line-left {
+    transform:
+      translate(-70px, -1px)
+      rotate(180deg);
+  }
+
+
+  .line-top-left {
+    transform:
+      translate(-55px, -55px)
+      rotate(225deg);
+  }
+
+
+  .line-top {
+    transform:
+      translate(0, -80px)
+      rotate(270deg);
+  }
+
+
+  .line-top-right {
+    transform:
+      translate(55px, -55px)
+      rotate(315deg);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE FAMILY WHEEL — COMPACT VERSION
+   Added only for mobile screens.
+   Desktop/tablet rules above remain unchanged.
+========================================================= */
+
+@media (max-width: 700px) {
+
+  /* Reduce overall mobile wheel height slightly */
+  .family-wheel {
+    width: 100%;
+    height: 455px;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  /* Smaller central wheel */
+  .wheel-center {
+    width: 135px;
+    height: 135px;
+  }
+
+  .wheel-family-glow {
+    width: 135px;
+    height: 135px;
+    background: rgba(253, 255, 148, 0.55);
+  }
+
+  .wheel-center img {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  /* Smaller 8 surrounding feature circles */
+  .feature-circle {
+    width: 88px;
+    height: 88px;
+    padding: 7px;
+  }
+
+  .feature-circle-icon {
+    width: 21px;
+    height: 21px;
+    margin-bottom: 3px;
+  }
+
+  .feature-circle h3 {
+    font-size: 11px;
+    line-height: 1.05;
+    margin-bottom: 2px;
+  }
+
+  .feature-circle p {
+    max-width: 72px;
+    font-size: 6.8px;
+    line-height: 1.18;
+  }
+
+  /* Reposition all 8 circles around the smaller center */
+
+  .feature-circle-1 {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .feature-circle-2 {
+    right: 18px;
+    top: 54px;
+  }
+
+  .feature-circle-3 {
+    right: 0;
+    top: 183px;
+  }
+
+  .feature-circle-4 {
+    right: 20px;
+    bottom: 48px;
+  }
+
+  .feature-circle-5 {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  .feature-circle-6 {
+    left: 20px;
+    bottom: 48px;
+  }
+
+  .feature-circle-7 {
+    left: 0;
+    top: 183px;
+  }
+
+  .feature-circle-8 {
+    left: 18px;
+    top: 54px;
+  }
+
+  /* Connector lines shortened for compact mobile wheel */
+
+  .wheel-line {
+    width: 66px;
+    height: 2px;
+  }
+
+  .line-right {
+    transform:
+      translate(67px, -1px)
+      rotate(0deg);
+  }
+
+  .line-bottom-right {
+    transform:
+      translate(51px, 51px)
+      rotate(45deg);
+  }
+
+  .line-bottom {
+    transform:
+      translate(0, 68px)
+      rotate(90deg);
+  }
+
+  .line-bottom-left {
+    transform:
+      translate(-51px, 51px)
+      rotate(135deg);
+  }
+
+  .line-left {
+    transform:
+      translate(-67px, -1px)
+      rotate(180deg);
+  }
+
+  .line-top-left {
+    transform:
+      translate(-51px, -51px)
+      rotate(225deg);
+  }
+
+  .line-top {
+    transform:
+      translate(0, -68px)
+      rotate(270deg);
+  }
+
+  .line-top-right {
+    transform:
+      translate(51px, -51px)
+      rotate(315deg);
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE FAMILY WHEEL — COMPACT VERSION
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .family-wheel {
+    height: 420px;
+    max-width: 335px;
+  }
+
+  .feature-circle {
+    width: 82px;
+    height: 82px;
+    padding: 6px;
+  }
+
+  .feature-circle-icon {
+    width: 19px;
+    height: 19px;
+    margin-bottom: 2px;
+  }
+
+  .feature-circle h3 {
+    font-size: 10px;
+    line-height: 1.05;
+    margin-bottom: 2px;
+  }
+
+  .feature-circle p {
+    max-width: 68px;
+    font-size: 6.3px;
+    line-height: 1.15;
+  }
+
+  .wheel-center {
+    width: 125px;
+    height: 125px;
+  }
+
+  .wheel-family-glow {
+    width: 125px;
+    height: 125px;
+  }
+
+  .wheel-center img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+
+  .feature-circle-1 {
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .feature-circle-2 {
+    right: 12px;
+    top: 49px;
+  }
+
+  .feature-circle-3 {
+    right: 0;
+    top: 169px;
+  }
+
+  .feature-circle-4 {
+    right: 15px;
+    bottom: 43px;
+  }
+
+  .feature-circle-5 {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  .feature-circle-6 {
+    left: 15px;
+    bottom: 43px;
+  }
+
+  .feature-circle-7 {
+    left: 0;
+    top: 169px;
+  }
+
+  .feature-circle-8 {
+    left: 12px;
+    top: 49px;
+  }
+
+  .wheel-line {
+    width: 60px;
+  }
+
+  .line-right {
+    transform:
+      translate(62px, -1px)
+      rotate(0deg);
+  }
+
+  .line-bottom-right {
+    transform:
+      translate(47px, 47px)
+      rotate(45deg);
+  }
+
+  .line-bottom {
+    transform:
+      translate(0, 63px)
+      rotate(90deg);
+  }
+
+  .line-bottom-left {
+    transform:
+      translate(-47px, 47px)
+      rotate(135deg);
+  }
+
+  .line-left {
+    transform:
+      translate(-62px, -1px)
+      rotate(180deg);
+  }
+
+  .line-top-left {
+    transform:
+      translate(-47px, -47px)
+      rotate(225deg);
+  }
+
+  .line-top {
+    transform:
+      translate(0, -63px)
+      rotate(270deg);
+  }
+
+  .line-top-right {
+    transform:
+      translate(47px, -47px)
+      rotate(315deg);
+  }
+}
+
+
+/* =========================================================
+   CENTRAL FAMILY CIRCLE — YELLOW BACKGROUND
+   Everything else remains unchanged.
+========================================================= */
+
+.wheel-center {
+  background: #FDFF94;
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   FINAL CENTRAL FAMILY WHEEL TREATMENT
+   Yellow background behind the existing center image.
+   No JSX or asset replacement required.
+========================================================= */
+
+.wheel-center {
+  background: #FDFF94;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.wheel-family-glow {
+  background: #FDFF94;
+  border-radius: 50%;
+}
+
+.wheel-center img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 700px) {
+  .wheel-center {
+    width: 135px;
+    height: 135px;
+    background: #FDFF94;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .wheel-family-glow {
+    width: 135px;
+    height: 135px;
+    background: #FDFF94;
+    border-radius: 50%;
+  }
+
+  .wheel-center img {
+    width: 135px;
+    height: 135px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+  }
+}
+
+@media (max-width: 380px) {
+  .wheel-center {
+    width: 125px;
+    height: 125px;
+    background: #FDFF94;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .wheel-family-glow {
+    width: 125px;
+    height: 125px;
+    background: #FDFF94;
+    border-radius: 50%;
+  }
+
+  .wheel-center img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+  }
+}
+
+
+/* =========================================================
+   FINAL CENTER WHEEL PALETTE
+   Matches Organize / Get Insights cards.
+========================================================= */
+.wheel-center {
+  background: rgba(253, 255, 148, 0.20);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.wheel-family-glow {
+  background: rgba(253, 255, 148, 0.20);
+  border-radius: 50%;
+}
+.wheel-center img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  mix-blend-mode: multiply;
+}
+@media (max-width: 700px) {
+  .wheel-center,
+  .wheel-family-glow {
+    background: rgba(253, 255, 148, 0.20);
+  }
+}
+@media (max-width: 380px) {
+  .wheel-center,
+  .wheel-family-glow {
+    background: rgba(253, 255, 148, 0.20);
+  }
+}
+
+
+/* =========================================================
+   8 FEATURE CIRCLE PNG ICONS
+   ADDED ONLY — ALL PREVIOUS CSS ABOVE IS UNCHANGED
+========================================================= */
+
+/* Desktop */
+.feature-circle-image {
+  width: 31px;
+  height: 31px;
+
+  object-fit: contain;
+  object-position: center;
+
+  display: block;
+
+  margin-bottom: 7px;
+
+  flex-shrink: 0;
+
+  transition: transform 0.28s ease;
+}
+
+/* Same hover scale previously used by the Lucide icons */
+@media (hover: hover) {
+  .feature-circle:hover .feature-circle-image {
+    transform: scale(1.08);
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .feature-circle-image {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 4px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 380px) {
+  .feature-circle-image {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 3px;
+  }
+}
